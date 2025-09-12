@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+#navbar {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 15px 0;
+}
+
+#navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 20px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+#navbar ul li a {
+  color: #b8d4f0;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.active {
+  background-color: #03396c;
+  color: #87ceeb;
+}
+
+header#home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  padding-left: 40px;
+  background: linear-gradient(135deg, #6fb6e8, #296baa);
+  color: white;
+  overflow: hidden;
+}
+
+.hero-boat {
+  font-size: 8em;
+  position: absolute;
+  right: 20px;
+  bottom: 40px;
+  animation: boat-swing 6s ease-in-out infinite;
+}
+
+@keyframes boat-swing {
+  0%, 100% {
+    transform: rotate(4deg);
+  }
+  50% {
+    transform: rotate(-4deg);
+  }
+}
+
+section {
+  padding: 80px 40px;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  border-bottom: 3px solid #0485cf;
+  margin-bottom: 20px;
+  color: white;
+  padding-bottom: 6px;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.waves {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  pointer-events: none;
+}
