@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const pointAtLength = path.getPointAtLength(progress * pathLength);
 
-    sailboat.style.top = `${pointAtLength.y - 22}px`;
+    sailboat.style.top = `${pointAtLength.y - 23}px`;
     sailboat.style.left = `${pointAtLength.x - 20}px`;
 
     const rotation = Math.sin(progress * Math.PI * 4) * 12;
