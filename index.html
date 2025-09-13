@@ -1,102 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Sailing Journey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>My Personal Site</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav class="nav-container">
-      <div class="logo">⛵ My Voyage</div>
+  <header id="header">
+    <nav class="navbar">
+      <div class="brand">MyPortfolio</div>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="about" class="section fade-up">
-      <h2>About Me</h2>
-      <p>Explorer passionate about tech and the sea. Always seeking new horizons in software and data.</p>
+    <section id="about" class="section fade-in">
+      <h1>About Me</h1>
+      <p>Passionate coder and lifelong learner dedicated to building impactful digital experiences.</p>
     </section>
 
-    <section id="skills" class="section fade-up">
+    <section id="skills" class="section fade-in">
       <h2>Skills</h2>
-      <ul class="skills-list">
-        <li><span class="skill-name">Python</span><div class="skill-bar" style="--skill-level:90%"></div></li>
-        <li><span class="skill-name">Data Science</span><div class="skill-bar" style="--skill-level:80%"></div></li>
-        <li><span class="skill-name">Machine Learning</span><div class="skill-bar" style="--skill-level:75%"></div></li>
-        <li><span class="skill-name">Web Development</span><div class="skill-bar" style="--skill-level:70%"></div></li>
-        <li><span class="skill-name">Unity & Game Dev</span><div class="skill-bar" style="--skill-level:60%"></div></li>
+      <ul class="simple-list">
+        <li>Python, Data Science, Machine Learning</li>
+        <li>Web Development (HTML, CSS, JavaScript)</li>
+        <li>Unity Game Development</li>
+        <li>API Integration & Data Visualization</li>
       </ul>
     </section>
 
-    <section id="experience" class="section fade-up">
+    <section id="experience" class="section fade-in">
       <h2>Experience</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-date">2024 - Present</div>
-          <div class="timeline-content">
-            <h3>Software Engineer</h3>
-            <p>Developed data-driven applications, collaborating with cross-functional teams.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-date">2023 - 2024</div>
-          <div class="timeline-content">
-            <h3>Research Assistant</h3>
-            <p>Assisted in academic research on machine learning algorithms and data analysis.</p>
-          </div>
-        </div>
+      <div class="list-items">
+        <article>
+          <h3>Software Engineer</h3>
+          <p>Worked on cross-functional teams building scalable web applications.</p>
+          <time>2024 - Present</time>
+        </article>
+        <article>
+          <h3>Research Assistant</h3>
+          <p>Contributed to machine learning research and algorithm optimization.</p>
+          <time>2023 - 2024</time>
+        </article>
       </div>
     </section>
 
-    <section id="projects" class="section fade-up">
+    <section id="projects" class="section fade-in">
       <h2>Projects</h2>
-      <div class="projects-list">
-        <div class="project-card">
+      <div class="list-items">
+        <article>
           <h3>Wave Tracker</h3>
-          <p>Interactive app visualizing trends in ocean wave data using Python and D3.js.</p>
-        </div>
-        <div class="project-card">
+          <p>Interactive visualization of ocean wave data with Python and D3.js.</p>
+        </article>
+        <article>
           <h3>BioSync Health Platform</h3>
-          <p>Integrated wearable data from multiple APIs for personalized health analytics.</p>
-        </div>
+          <p>Integrated API data from fitness wearables for personal analytics.</p>
+        </article>
       </div>
     </section>
 
-    <section id="education" class="section fade-up">
+    <section id="education" class="section fade-in">
       <h2>Education</h2>
-      <ul class="education-list">
-        <li>
-          <strong>BSc Computer Science</strong> — ABC University (2021-2025)
-        </li>
-        <li>
-          <strong>Advanced Machine Learning Course</strong> — Online Certification (2023)
-        </li>
+      <ul class="simple-list">
+        <li>BSc Computer Science, ABC University (2021-2025)</li>
+        <li>Machine Learning certification (2023)</li>
       </ul>
     </section>
 
-    <section id="contact" class="section fade-up">
+    <section id="contact" class="section fade-in">
       <h2>Contact</h2>
       <form class="contact-form">
         <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit" class="send-btn">Send Message</button>
+        <input type="email" placeholder="Your Email" required/>
+        <textarea placeholder="Message" rows="4" required></textarea>
+        <button type="submit">Send</button>
       </form>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 My Sailing Voyage | Anchored on GitHub Pages</p>
+    <p>© 2025 MyPortfolio. Built with care.</p>
   </footer>
 
   <script src="script.js"></script>
