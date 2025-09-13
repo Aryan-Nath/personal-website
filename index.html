@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>MyPortfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Sailing Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header id="header">
+  <header>
     <nav class="navbar">
-      <div class="brand">MyPortfolio</div>
+      <div class="brand">SailingPortfolio</div>
       <ul class="nav-links">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#about" class="nav-link">About Me</a></li>
+        <li><a href="#career" class="nav-link">Career</a></li>
         <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
@@ -25,56 +25,70 @@
     <section id="about" class="section fade-in">
       <h1>About Me</h1>
       <p>
-        Passionate coder and lifelong learner dedicated to building impactful digital experiences.<br>
-        Love blending tech and creativity, and always up for new challenges.
+        A passionate developer fascinated by the ocean and technology’s vast horizons.
       </p>
     </section>
 
-    <section id="skills" class="section fade-in">
-      <h2>Skills</h2>
-      <ul class="simple-list">
-        <li>Python, Data Science, Machine Learning</li>
-        <li>Web Development (HTML, CSS, JavaScript)</li>
-        <li>Unity Game Development</li>
-        <li>API Integration & Data Visualization</li>
-      </ul>
-    </section>
+    <section id="career" class="section career-section">
+      <h2>Career</h2>
+      <div class="timeline-container">
+        <svg id="water-path" viewBox="0 0 200 600" preserveAspectRatio="none" aria-hidden="true" 
+             class="water-svg">
+          <path id="wavePath"
+                d="M50 0 q40 40 0 80 q-40 40 0 80 q40 40 0 80 q-40 40 0 80 q40 40 0 80" 
+                fill="none" stroke="#6495ED" stroke-width="6" opacity="0.4" stroke-linecap="round"/>
+        </svg>
 
-    <section id="experience" class="section fade-in">
-      <h2>Experience</h2>
-      <div class="list-items">
-        <article>
-          <h3>Software Engineer</h3>
-          <p>Worked on cross-functional teams building scalable web applications.</p>
-          <time>2024 - Present</time>
-        </article>
-        <article>
-          <h3>Research Assistant</h3>
-          <p>Contributed to machine learning research and algorithm optimization.</p>
-          <time>2023 - 2024</time>
-        </article>
-      </div>
-    </section>
+        <div id="sailboat" aria-label="Sailing boat" role="img" title="Sailing Boat">
+          <!-- Inline Sailboat SVG -->
+          <svg width="30" height="30" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" >
+            <path d="M32 2 L12 62 L52 62 Z" fill="#e27d60" stroke="#a0522d" stroke-width="2"/>
+            <rect x="29" y="15" width="6" height="20" fill="#7fc8f8" stroke="#2471a3" stroke-width="1.5"/>
+          </svg>
+        </div>
 
-    <section id="projects" class="section fade-in">
-      <h2>Projects</h2>
-      <div class="list-items">
-        <article>
-          <h3>Wave Tracker</h3>
-          <p>Interactive visualization of ocean wave data with Python and D3.js.</p>
-        </article>
-        <article>
-          <h3>BioSync Health Platform</h3>
-          <p>Integrated wearable device data for personal analytics and visualization.</p>
-        </article>
+        <div class="timeline-entries">
+          <article class="entry" style="top: 0;">
+            <h3>Junior Developer</h3>
+            <time>2019 - 2020</time>
+            <p>Built web projects and learned full stack development basics.</p>
+          </article>
+          <article class="entry" style="top: 90px;">
+            <h3>Software Engineer</h3>
+            <time>2020 - 2023</time>
+            <p>Worked on scalable applications and data visualization tools.</p>
+          </article>
+          <article class="entry" style="top: 180px;">
+            <h3>Senior Developer</h3>
+            <time>2023 - Present</time>
+            <p>Leading a team building innovative health and fitness data platforms.</p>
+          </article>
+        </div>
       </div>
     </section>
 
     <section id="education" class="section fade-in">
       <h2>Education</h2>
-      <ul class="simple-list">
-        <li>BSc Computer Science, ABC University (2021-2025)</li>
-        <li>Machine Learning Certification (2023)</li>
+      <ul>
+        <li>BSc Computer Science, XYZ University (2016 - 2020)</li>
+        <li>Certified Cloud Developer, Online Course (2022)</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section fade-in">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>BioSync</strong>: Health analytics platform integrating wearable data.</li>
+        <li><strong>WaveTracker</strong>: Interactive ocean wave data visualization.</li>
+      </ul>
+    </section>
+
+    <section id="skills" class="section fade-in">
+      <h2>Skills</h2>
+      <ul>
+        <li>Python, JavaScript, React</li>
+        <li>Data Visualization & APIs</li>
+        <li>Cloud Infrastructure & DevOps</li>
       </ul>
     </section>
 
@@ -82,16 +96,17 @@
       <h2>Contact</h2>
       <form class="contact-form">
         <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required/>
-        <textarea placeholder="Message" rows="4" required></textarea>
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="4" required></textarea>
         <button type="submit">Send</button>
       </form>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 MyPortfolio. Built with care.</p>
+    <p>© 2025 Sailing Portfolio. Anchored on GitHub Pages.</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
